@@ -6,7 +6,7 @@ class Circle : public Shape
 {
 public:
     Circle(double r);
-    Circle(const Circle & other);
+    Circle(const Circle &other);
 
     double getArea() const;
     double getPerimeter() const;
@@ -15,6 +15,6 @@ public:
 
 private:
     Circle(); // doesn't allow to call default constructor
-
+    Color color = Color::White;
     double r_;
 };

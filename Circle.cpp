@@ -4,15 +4,17 @@
 
 Circle::Circle(double r)
     : r_(r)
-{}
+{
+}
 
-Circle::Circle(const Circle & other)
+Circle::Circle(const Circle &other)
 {
     r_ = other.getRadius();
 }
 
 double Circle::getArea() const
 {
+    // static_assert(M_PI == 3.14, "Not precise correctly");
     return M_PI * r_ * r_;
 }
 

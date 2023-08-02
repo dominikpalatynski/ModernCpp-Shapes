@@ -6,7 +6,7 @@ class Square : public Rectangle
 {
 public:
     Square(double x);
-    Square(const Square & other);
+    Square(const Square &other);
 
     double getArea();
     double getPerimeter();
@@ -15,4 +15,6 @@ public:
 private:
     double getY(); // should not have Y dimension
     Square();
+
+    Color color = Color::Red;
 };

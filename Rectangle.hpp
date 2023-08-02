@@ -6,7 +6,7 @@ class Rectangle : public Shape
 {
 public:
     Rectangle(double x, double y);
-    Rectangle(const Rectangle & other);
+    Rectangle(const Rectangle &other);
 
     double getArea() const;
     double getPerimeter() const;
@@ -17,6 +17,7 @@ public:
 private:
     Rectangle();
 
+    Color color = Color::Red;
     double x_;
     double y_;
 };
