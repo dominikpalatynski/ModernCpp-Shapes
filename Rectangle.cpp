@@ -4,12 +4,7 @@
 Rectangle::Rectangle(double x, double y)
     : x_(x),
       y_(y)
-{}
-
-Rectangle::Rectangle(const Rectangle &other)
 {
-    x_ = other.getX();
-    y_ = other.getY();
 }
 
 double Rectangle::getArea() const

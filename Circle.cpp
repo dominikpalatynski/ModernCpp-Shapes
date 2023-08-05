@@ -7,11 +7,6 @@ Circle::Circle(double r)
 {
 }
 
-Circle::Circle(const Circle &other)
-{
-    r_ = other.getRadius();
-}
-
 double Circle::getArea() const
 {
     // static_assert(M_PI == 3.14, "Not precise correctly");

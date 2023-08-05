@@ -11,6 +11,9 @@ class Shape
 {
 
 public:
+    Shape() = default;
+    Shape(Color c);
+
     virtual ~Shape() {}
 
     virtual double getArea() const = 0;
